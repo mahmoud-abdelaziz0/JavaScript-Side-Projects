@@ -25,3 +25,21 @@ body {
   padding: 26px 20px;
   border-radius: 5px;
 }
+.container h1 {
+  font-weight: 500;
+  font-size: 45px;
+}
+.container h1 span {
+  color: #88D66C;
+  border-bottom: 4px solid #88D66C;
+  padding-bottom: 7px;
+}
+.display img {
+  width: 30px;
+  cursor: pointer;
+}
+.display input {
+  border: none;
+  outline: none;
+  font-size: 24px;
+}
