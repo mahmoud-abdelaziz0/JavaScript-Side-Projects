@@ -43,3 +43,20 @@ body {
   outline: none;
   font-size: 24px;
 }
+.container button img {
+  width: 20px;
+  margin-right: 10px;
+}
+.container button {
+  border: 0;
+  outline: 0;
+  background: #88D66C;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  padding: 16px 26px;
+  border-radius: 5px;
+  cursor: pointer;
+}
