@@ -13,7 +13,7 @@
         <input type="text" id="password" placeholder="password">
         <img src="images/copy.png" alt="">
       </div>
-      <button><img src="images/generate.png">Generate Password</button>
+      <button onclick="createPassword()"><img src="images/generate.png">Generate Password</button>
     </div>
 
     <script>
@@ -25,6 +25,8 @@
       const numbers = "0123456789";
       const symbols = "@#$%^&*()_+|{}[]></-=~`";
 
+      const allChars = uppercase + lowercase + numbers + symbols;
+
       function createPassword() {
         let password = "";
 
@@ -33,6 +35,10 @@
         password += numbers[Math.floor(Math.random() * numbers.length)];
         password += symbols[Math.floor(Math.random() * symbols.length)];
 
+        while(length > password.length) {
+          password += allChars[Math.floor(Math.random() * allChars.length)];
+        }
+        passwordInput.value = password;
       }
     </script>
   </body>
